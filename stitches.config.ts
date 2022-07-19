@@ -29,53 +29,81 @@ export const {
       purple600: "hsl(252,80%,53%)",
     },
     space: {
-      1: "5px",
-      2: "10px",
-      3: "15px",
-      4: "20px",
-      5: "25px",
-      6: "35px",
+      1: ".2rem",
+      2: ".5rem",
+      3: "1rem",
+      4: "1.25rem",
+      5: "1.5rem",
+      6: "1.75rem",
+      7: "2rem",
+      8: "2.25rem",
+      9: "2.625rem",
     },
     sizes: {
-      1: "5px",
-      2: "10px",
-      3: "15px",
-      4: "20px",
-      5: "25px",
-      6: "35px",
+      1: ".2rem",
+      2: ".5rem",
+      3: "1rem",
+      4: "1.25rem",
+      5: "1.5rem",
+      6: "1.75rem",
+      7: "2rem",
+      8: "2.25rem",
+      9: "2.625rem",
     },
     fontSizes: {
       1: "12px",
-      2: "13px",
-      3: "15px",
-      4: "17px",
-      5: "19px",
-      6: "21px",
+      2: "14px",
+      3: "16px",
+      4: "20px",
+      5: "24px",
+      6: "28px",
+      7: "32px",
+      8: "36px",
+      9: "42px",
     },
     fonts: {
       system: "system-ui",
     },
   },
   utils: {
-    marginX: (value: number | string) => ({
+    mx: (value: number | string) => ({
       marginLeft: value,
       marginRight: value,
     }),
-    marginY: (value: number | string) => ({
+    my: (value: number | string) => ({
       marginTop: value,
       marginBottom: value,
     }),
-    paddingX: (value: number | string) => ({
+    px: (value: number | string) => ({
       paddingLeft: value,
       paddingRight: value,
     }),
-    paddingY: (value: number | string) => ({
+    py: (value: number | string) => ({
       paddingTop: value,
       paddingBottom: value,
     }),
+    linearGradient: (value: string) => ({
+      backgroundImage: `linear-gradient(${value})`,
+    }),
   },
   media: {
-    bp1: "(min-width: 520px)",
-    bp2: "(min-width: 900px)",
+    bp1: "(min-width: 599.95px)",
+    bp2: "(min-width: 959.95px)",
+    bp3: "(min-width: 1024px)",
+    bp4: "(min-width: 1280px)",
+    bp5: "(min-width: 1400px)",
+  },
+});
+
+export const globalStyles = globalCss({
+  ":root": {
+    "--header-height": "48px",
+    "--sidemenu-width": "220px",
+  },
+
+  "*, *::after, *::before": {
+    margin: 0,
+    padding: 0,
+    boxSizing: "border-box",
   },
 });
