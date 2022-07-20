@@ -1,9 +1,10 @@
+import React from "react";
 import { createContext, FC, PropsWithChildren } from "react";
 import { useCycle } from "framer-motion";
 
-type AsideMenuContextType = {
+export type AsideMenuContextType = {
   asideMenuCycle: number;
-  setAsideMenuCycle(): void;
+  handleAsideMenuCycle(): void;
   asideMenuMobileCycle: boolean;
   setAsideMenuMobileCycle(): void;
 };
@@ -15,11 +16,16 @@ export const AsideMenuContextProvider: FC<PropsWithChildren> = ({
 }) => {
   const [asideMenuCycle, setAsideMenuCycle] = useCycle(0, 220);
   const [asideMenuMobileCycle, setAsideMenuMobileCycle] = useCycle(false, true);
+
+  function handleAsideMenuCycle() {
+    setAsideMenuCycle();
+  }
+
   return (
     <AsideMenuContext.Provider
       value={{
         asideMenuCycle,
-        setAsideMenuCycle,
+        handleAsideMenuCycle,
         asideMenuMobileCycle,
         setAsideMenuMobileCycle,
       }}
