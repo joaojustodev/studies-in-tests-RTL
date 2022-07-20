@@ -13,6 +13,12 @@ describe("<Header/>", () => {
     expect(render(<Header />));
   });
 
+  it("should render Logo", () => {
+    const { getByText } = render(<Header />);
+
+    expect(getByText("Logo")).toBeInTheDocument();
+  });
+
   it("should render MenuButton", () => {
     const { getByTitle } = render(<Header />);
 
