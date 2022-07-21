@@ -1,13 +1,7 @@
 import { styled } from "../../stitches.config";
 import { motion } from "framer-motion";
 
-export const Container = styled(motion.div, {
-  display: "none",
-
-  "@bp1": {
-    display: "block",
-  },
-});
+export const Container = styled(motion.div, {});
 
 export const AsideMenuMobileContent = styled(motion.div, {
   position: "fixed",
