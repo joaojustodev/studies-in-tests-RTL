@@ -87,7 +87,7 @@ export const {
     }),
   },
   media: {
-    bp1: "(min-width: 599.95px)",
+    bp1: "(min-width: 599px)",
     bp2: "(min-width: 959.95px)",
     bp3: "(min-width: 1024px)",
     bp4: "(min-width: 1280px)",
