@@ -2,7 +2,7 @@ import React from "react";
 import { render, cleanup } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Header from "./index";
-import { renderWithContext } from "../../__test__/renderWithContext";
+import { renderWithContext } from "../../__test__/utils/renderWithContext";
 
 afterEach(() => {
   cleanup();

@@ -1,5 +1,5 @@
 import React, { ButtonHTMLAttributes } from "react";
-import { styled } from "../../../stitches.config";
+import { styled } from "../../../../stitches.config";
 import { List } from "phosphor-react";
 import { CSS } from "@stitches/react/types/css-util";
 
