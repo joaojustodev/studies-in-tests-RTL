@@ -12,7 +12,7 @@ type MenuButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 export const MenuButton = (props: MenuButtonProps) => {
   return (
     <Button {...props}>
-      <List aria-hidden role="button" size={22} />
+      <List aria-hidden data-testid="listSvg" size={22} />
     </Button>
   );
 };
