@@ -9,6 +9,7 @@ const config = nextJestConfig({ dir: "./src" });
 
 export default config({
   clearMocks: true,
+  verbose: true,
 
   collectCoverage: true,
 
