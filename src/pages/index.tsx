@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import { styled } from "../../stitches.config";
 import Layout from "../components/Ui/Layout";
 import Seo from "../components/Seo";
+
 const Box = styled("div", {
   gridColumn: "2/3",
   gridRow: "2/5",
