@@ -9,7 +9,7 @@ const MenuBar: React.FC = () => {
   const { setAsideMenuMobileCycle } = useContext(AsideMenuContext);
 
   return (
-    <S.Container>
+	  <S.Container>
       <S.MenuBarList role="menu">
         <S.MenuBarListItem role="menuitem">
           <Link href="/" title="Ir para início" aria-label="Ir para início">

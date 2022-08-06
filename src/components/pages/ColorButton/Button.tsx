@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 type ButtonStyledProps = {
-  bg: string;
+ bg: string;
 };
 
 export function spaceBeforeCapitalLetters(colorName: string): string {

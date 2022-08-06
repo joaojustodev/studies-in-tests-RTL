@@ -16,7 +16,7 @@ const AsideMenu = () => {
         aria-label="Menu lateral"
         title="Menu lateral"
       >
-        {asideMenuCycle && (
+        {Boolean(asideMenuCycle) && (
           <S.AsideMenuContent>
             <ul style={{ padding: "10px " }}>
               <li style={{ height: "100px" }}>TESTANDO MENU</li>

@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
-import { styled } from "../../stitches.config";
+import styled from "styled-components";
 import Layout from "../components/Ui/Layout";
 import Seo from "../components/Seo";
 
-const Box = styled("div", {
-  gridColumn: "2/3",
-  gridRow: "2/5",
-  backgroundColor: "red ",
-});
+const Box = styled.div`
+  grid-column: "2/3";
+  grid-row: "2/5";
+  background-color: "red ";
+`;
 
 const Home: NextPage = () => {
   return (
